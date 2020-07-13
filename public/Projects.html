@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<style>
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: pink;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<div class="header">
+    <title>Projects</title>
+    <nav>
+        <ul>
+            <li><a href="welcome.html">HOME</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="contactme.html">CONTACT ME</a></li>
+            <li><a href="Projects.html">PROJECTS</a></li>
+            <style>
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: palevioletred;
+                }
+                li{
+                    float: left;
+                }
+                li a{
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+            </style>
+        </ul>
+    </nav>
+    <h1>All Projects</h1>
+</div>
+
+<div id="homepage_container"></div>
+
+<div class="row"> 
+  <div class="column">
+    <h3>To Do List</h3><a href="https://todo---list.herokuapp.com"><img src="todo_list.png" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <h3>Weather App</h3><a href="https://weather1--app.herokuapp.com"><img src="weather-app.png" style="width:100%"></a>
+  </div> 
+  <div class="column">
+ 
+  </div>
+  <div class="column">
+    
+  </div>
+</div>
+
+ <!-- ... other HTML ... -->
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="homepage.js"></script>
+
+</body>
+</html>
