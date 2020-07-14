@@ -45,8 +45,8 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
+module.exports = app;
+
 app.listen(process.env.PORT || 5000, function () {
   console.log('Example app listening on port 3000!')
 })
-
-module.exports = app;
